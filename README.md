@@ -2,7 +2,8 @@
 
 These scripts are to finetune scibert based on the intent and sentiment of the text. 
 <br/>
-Intention based context classification:
+<ol>
+<li><b>Intention based context classification</b></li>
 
 This model is a fine-tuned version of SciBERT, specifically designed for context classification in scientific journals. 
 Its primary function is to categorize the intentions of scientific texts based on the topic they describe.
@@ -26,7 +27,7 @@ sentiment: https://huggingface.co/puzzz21/sci-sentiment-classify
 This model is available in hugging face 🤗 : https://huggingface.co/puzzz21/sci-intent-classify
 
 <hr/>
-
+<li><b>Sentiment based context classification</b></li>
 This model has been fine-tuned on Scibert specifically for sentiment classification in scientific texts. Its primary task is to categorize the sentiment expressed by the author based on the context of the sentence. The model classifies the sentiment into one of three classes: positive, negative, or neutral. The positive class is assigned when the author expresses a positive sentiment in the text, while the negative class is used when a negative sentiment is conveyed. The neutral class is assigned when the text does not exhibit any strong positive or negative sentiment.
 This model outputs following classnames according to the sentiment:
 </br>
@@ -46,4 +47,4 @@ This model outputs following classnames according to the sentiment:
 For finetuning, the publicly available dataset on context identification from Angrosh et al. https://dl.acm.org/doi/10.1145/1816123.1816168 is used.
 <br/>
 This model is available in hugging face 🤗 : https://huggingface.co/puzzz21/sci-sentiment-classify
-
+</ol>
